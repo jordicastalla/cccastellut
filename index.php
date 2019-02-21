@@ -3,7 +3,7 @@
 
 <div id="wrapper">
 
-	<section id="entrades">
+	<section class="entrades">
 
 		 <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		     $args = array (	'posts_per_page' => '2'

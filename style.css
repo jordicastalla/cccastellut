@@ -192,7 +192,6 @@ header{
 	width:100%;
 	text-align: left;
 	padding: 0;
-	margin-top:20px;
 	z-index:10000;
 	position:relative;
 	display:flex;
@@ -207,6 +206,7 @@ header{
 	right:5%;
 	top:30%;
 	z-index:10000;
+	max-width:170px;
 
 
 
@@ -247,7 +247,7 @@ header h2 {
 
 
 
-nav {
+nav#menuPrincipal {
 	background: #222; /* Show a solid color for older browsers */
 	background: -moz-linear-gradient(#0a0a0a,#99042E);
 	background: -o-linear-gradient(#99042E, #0a0a0a);
@@ -263,21 +263,20 @@ nav {
 	width:100%;
 	border-bottom-left-radius:3px;
 	border-bottom-right-radius:3px;
-	margin-top:10px;
 
 }
-nav ul {
+nav#menuPrincipal ul {
 	font-size: 13px;
 	list-style: none;
 	margin: 0 0 0 -0.8125em;
 	padding-left: 10px;
 
 }
-nav li {
+nav#menuPrincipal li {
 	float: left;
 	position: relative;
 }
-nav a {
+nav#menuPrincipal a {
 	font-family:'Special Elite', cursive;
 	font-size:1.2em;
 	color:#FFF;
@@ -286,7 +285,7 @@ nav a {
 	padding: 0 1.2125em;
 	text-decoration: none;
 }
-nav ul ul {
+nav#menuPrincipal ul ul {
 	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
@@ -300,11 +299,11 @@ nav ul ul {
 	z-index: 99999;
 	padding-left: 0px;
 }
-nav ul ul ul {
+nav#menuPrincipal ul ul ul {
 	left: 100%;
 	top: 0;
 }
-nav ul ul a {
+nav#menuPrincipal ul ul a {
 	background: #191919;
 	border-bottom: 1px dotted #ddd;
 	color:#7B7979;
@@ -315,9 +314,9 @@ nav ul ul a {
 	padding: 10px 10px;
 	width: 168px;
 }
-nav li:hover > a,
-nav ul ul :hover > a,
-nav a:focus {
+nav#menuPrincipal li:hover > a,
+nav#menuPrincipalul ul :hover > a,
+nav#menuPrincipal a:focus {
 	background: #99042e; /* Show a solid color for older browsers */
 	background: -moz-linear-gradient(#99042e, #E51D55);
 	background: -o-linear-gradient(#99042e, #E51D55);
@@ -326,8 +325,8 @@ nav a:focus {
 	color: #fff;
 
 }
-nav li:hover > a,
-nav a:focus {
+nav#menuPrincipal li:hover > a,
+nav#menuPrincipal a:focus {
 
 	background: #99042e; /* Show a solid color for older browsers */
 	background: -moz-linear-gradient(#0a0a0a, #E51D55);
@@ -336,13 +335,13 @@ nav a:focus {
 	background: -webkit-linear-gradient(#0a0a0a, #E51D55);
 	color: #fff;
 }
-nav ul li:hover > ul {
+nav#menuPrincipal ul li:hover > ul {
 	display: block;
 }
-nav .current-menu-item > a,
-nav .current-menu-ancestor > a,
-nav .current_page_item > a,
-nav .current_page_ancestor > a {
+nav#menuPrincipal .current-menu-item > a,
+nav#menuPrincipal .current-menu-ancestor > a,
+nav#menuPrincipal .current_page_item > a,
+nav#menuPrincipal .current_page_ancestor > a {
 
 	color:#E51D55;
 }
@@ -363,7 +362,7 @@ nav .current_page_ancestor > a {
 
 
 
-section#entrades{
+section.entrades{
 
 float:left;
 max-width:60%;
@@ -371,7 +370,7 @@ max-width:60%;
 
 }
 
-section#entrades img{
+section.entrades img{
 	float:left;
 	padding: 10px 18px 0px 0px;
 	width:100%;
