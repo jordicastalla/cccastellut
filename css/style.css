@@ -185,10 +185,7 @@ ul {
 
 header{
 	width:100%;
-	text-align: left;
 	padding: 0;
-	z-index:10000;
-	position:relative;
 	display:flex;
 	flex-wrap: wrap;
 
@@ -197,10 +194,6 @@ header{
 #logo{
 
 
-	position:absolute;
-	right:5%;
-	top:30%;
-	z-index:10000;
 	max-width:170px;
 
 
@@ -225,18 +218,11 @@ header h1 a{
 	font-size:3em;
 }
 
-header h2 {
-	font-size: 22px;
-	color: #ffe9b7;
-	margin: 10px 0 0 30px;
-	font-weight: normal;
-	text-transform: lowercase;
 
-}
 
 header ul.slides img{
 filter: sepia(80%);
-
+width:100%;
 }
 
 
@@ -247,28 +233,20 @@ filter: sepia(80%);
 
 
 nav#menuPrincipal {
-	background: #222; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#0a0a0a,#99042E);
-	background: -o-linear-gradient(#99042E, #0a0a0a);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99042E), to(#0a0a0a)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#99042E, #0a0a0a);
-	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-	clear: both;
-	display: block;
-	float: left;
-	margin: 0 auto;
 	width:100%;
-	border-bottom-left-radius:3px;
-	border-bottom-right-radius:3px;
+	background: linear-gradient(#99042E, #0a0a0a);
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+
+
 
 }
 nav#menuPrincipal ul {
+	display: inline-block;
 	font-size: 18px;
 	list-style: none;
-	margin: 0 0 0 -0.8125em;
 	padding-left: 10px;
+	width:100%;
+	margin: 0 auto;
 
 }
 nav#menuPrincipal li {
@@ -318,11 +296,7 @@ nav#menuPrincipal li:hover > a,
 nav#menuPrincipalul ul :hover > a,
 nav#menuPrincipal a:focus {
 	background: #99042e; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#99042e, #E51D55);
-	background: -o-linear-gradient(#99042e, #E51D55);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#99042e), to(#E51D55)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#99042e, #E51D55);
-	color: #fff;
+
 
 }
 nav#menuPrincipal li:hover > a,
@@ -356,7 +330,7 @@ nav#menuPrincipal .current_page_ancestor > a {
 	margin: 0 auto;
 	text-align: left;
 	justify-content: flex-start;
-	padding-top: 25px;
+	padding: 25px 0px;
 
 }
 
@@ -831,11 +805,14 @@ ol.commentlist li.author {
 /******************* */
 
 footer{
+	display: block;
 	width: 100%;
+	height:100%;
 	text-align: center;
-	clear:both;
-	padding:0;
-	margin:0;
+	clear:left;
+	margin:50px 0;
+
+
 
 	}
 
@@ -935,8 +912,6 @@ padding-top:14px;
 	font-family: 'Cormorant', serif;
 	background: #99042E;
 	padding: 10px;
-	-moz-box-shadow: 0 0 5px 5px #99042E;
-	-webkit-box-shadow: 0 0 5px 5px #99042E;
 	box-shadow: 0 0 5px 5px #99042E;
 
 
