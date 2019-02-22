@@ -21,6 +21,12 @@ font-size: 1px;
 line-height: 1px;
 }
 
+html{
+
+	margin:0;
+	padding:0;
+	margin-top:0;
+}
 
 
 body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, p, form{
@@ -31,10 +37,11 @@ body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, p, form{
 body {
 	font-size:1em;
 	text-align: center;
-	vertical-align: top;
 	color: #2a423c;
 	border-top: 10px solid #99042E;
   font-family: 'Montserrat', sans-serif;
+	text-rendering: optimizeLegibility;
+
 
 
 }
@@ -183,29 +190,34 @@ ul {
 
 }
 
+/*+++++ HEADER ++++++++++++++
+*****************************/
+
 header{
 	width:100%;
 	padding: 0;
+	margin:0;
 	display:flex;
 	flex-wrap: wrap;
+	position:relative;
+	justify-content: space-between;
 
 }
 
 #logo{
-
-
+	position:absolute;
+	left:5%;
+	top:50px;
 	max-width:170px;
-
-
+	z-index:9999;
 
 }
 
 header h1 {
-
-	margin: 20px 0 0 30px;
-	padding: 30px 0 0 0;
 	position:absolute;
-	z-index:10000;
+	left:15%;
+	top:80px;
+	z-index:9999;
 
 }
 
@@ -220,9 +232,11 @@ header h1 a{
 
 
 
-header ul.slides img{
+header img{
 filter: sepia(80%);
 width:100%;
+max-height: 20em;
+
 }
 
 
@@ -236,17 +250,13 @@ nav#menuPrincipal {
 	width:100%;
 	background: linear-gradient(#99042E, #0a0a0a);
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
-
-
-
 }
+
 nav#menuPrincipal ul {
 	display: inline-block;
-	font-size: 18px;
 	list-style: none;
-	padding-left: 10px;
-	width:100%;
 	margin: 0 auto;
+	padding:0;
 
 }
 nav#menuPrincipal li {
@@ -264,8 +274,7 @@ nav#menuPrincipal a {
 	text-decoration: none;
 }
 nav#menuPrincipal ul ul {
-	-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+	background: linear-gradient(#99042E, #0a0a0a);
 	box-shadow: 0 3px 3px rgba(0,0,0,0.2);
 	display: none;
 	float: left;
@@ -284,7 +293,7 @@ nav#menuPrincipal ul ul ul {
 nav#menuPrincipal ul ul a {
 	background: #191919;
 	border-bottom: 1px dotted #ddd;
-	color:#7B7979;
+	color:#fff;
 	font-size: 13px;
 	font-weight: normal;
 	height: auto;
@@ -302,12 +311,8 @@ nav#menuPrincipal a:focus {
 nav#menuPrincipal li:hover > a,
 nav#menuPrincipal a:focus {
 
-	background: #99042e; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#0a0a0a, #E51D55);
-	background: -o-linear-gradient(#0a0a0a, #E51D55);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0a0a0a), to(#E51D55)); /* Older webkit syntax */
-	background: -webkit-linear-gradient(#0a0a0a, #E51D55);
-	color: #fff;
+	background: #E51D55;
+
 }
 nav#menuPrincipal ul li:hover > ul {
 	display: block;
@@ -810,7 +815,7 @@ footer{
 	height:100%;
 	text-align: center;
 	clear:left;
-	margin:50px 0;
+	margin-top: 10px;
 
 
 
@@ -857,8 +862,14 @@ footer .adreca{
 }
 
 footer .creative{
-padding-top:14px;
+padding:14px 0;
 	font-size:0.7em;
+
+}
+
+footer .credits{
+	display: block;
+margin-bottom:5px;
 
 }
 
@@ -871,7 +882,6 @@ padding-top:14px;
 	justify-content: center;
 	align-items:center;
 	background: #99042E;
-	padding: 0 25px 10px;
 	color:#FFF;
 	border-bottom-left-radius:7px;
 	border-bottom-right-radius:7px;

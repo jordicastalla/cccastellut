@@ -37,12 +37,6 @@
 
 </footer>
 
-
-<span class='credits'><p><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> funciona amb <a href="https://ca.wordpress.org/">WordPress</a> amb el tema <strong>CCCastellutResponsive</strong> dessenvopulat per <a href="http://www.jordijuan.com">Jordi Juan Pérez (Diània Webmaster)</a></p></span>
-
-
-
-
 </body>
 
 </html>
