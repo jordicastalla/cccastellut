@@ -1,4 +1,5 @@
 
+</div><!-- contenidorWeb-->
 	</div> <!-- wrapper -->
 
 	<footer>
@@ -6,9 +7,9 @@
 		<!-- <svg id="Serres">
 			<use xlink:href="#Maigmo" />
 		</svg> -->
-		<img src="wp-content/themes/cccastellut/images/serres.png" alt="Maigmó" id="Serres" />
+		<img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/Maigmo.png" alt="Maigmó" id="Serres" />
 
-		
+
 			<div class="footPeu">
 
 						<nav id="menuFooter">
@@ -28,21 +29,16 @@
 							<li><a href="https://picasaweb.google.com/110321736028535091382" target="_blank" ><img src="wp-content/themes/cccastellut/images/social/picasa.png" alt="picasa" /></a></li>
 						</ul>
 
-
-
-
 							<span class="adreca">Centre Cultural Castellut -  C/ Dr. Fleming, 50 - 03420 - Castalla (l'Alcoià)</span>
-							<span class='creative'><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" class='ccimg' /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Web CCC</span> de <a xmlns:cc="http://creativecommons.org/ns#" href="http://www.centreculturalcastellut.com" property="cc:attributionName" rel="cc:attributionURL"> Centre Cultural Castellut</a> està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Reconeixement-NoComercial-CompartirIgual 3.0 No adaptada de Creative Commons</a></span>
-
+							<span class='creative'><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Llicència de Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" class='ccimg' /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" property="dct:title" rel="dct:type">Web CCC</span> de <a xmlns:cc="http://creativecommons.org/ns" href="http://www.centreculturalcastellut.com" property="cc:attributionName" rel="cc:attributionURL"> Centre Cultural Castellut</a> està subjecta a una llicència de <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Reconeixement-NoComercial-CompartirIgual 3.0 No adaptada de Creative Commons</a></span>
 
 				</div>
 
 
-		<span class='credits'><p><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> funciona amb <a href="https://ca.wordpress.org/">WordPress</a> amb el tema <strong>CCCastellutResponsive</strong> dessenvopulat per <a href="http://www.jordijuan.com">Jordi Juan Pérez (Diània Webmaster)</a></p></span>
+</footer>
 
-	<?php wp_footer(); ?>
 
-	</footer>
+<span class='credits'><p><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a> funciona amb <a href="https://ca.wordpress.org/">WordPress</a> amb el tema <strong>CCCastellutResponsive</strong> dessenvopulat per <a href="http://www.jordijuan.com">Jordi Juan Pérez (Diània Webmaster)</a></p></span>
 
 
 

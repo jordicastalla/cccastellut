@@ -48,13 +48,11 @@ jQuery( document ).ready( function( $ ) {
 			</symbol>
 	</svg>
 
-<div id="contenidorWeb">
-
 	<header>
 
-		  <h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
-		  <h2><?php bloginfo('description'); ?></h2>
-		  <img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/logoombra2.png" alt="centre cultural castellut" id="logo" />
+			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
+			<h2><?php bloginfo('description'); ?></h2>
+			<img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/logoombra2.png" alt="centre cultural castellut" id="logo" />
 
 			<?php echo do_shortcode('[metaslider id="2900"]'); ?>
 
@@ -65,9 +63,9 @@ jQuery( document ).ready( function( $ ) {
 
 						<?php
 			$args = array(
-			  'depth'        => 0,
-			  'title_li'     => (''),
-			  'exclude' => '132,139,152'
+				'depth'        => 0,
+				'title_li'     => (''),
+				'exclude' => '132,139,152'
 
 			);
 			wp_list_pages( $args );
@@ -80,5 +78,9 @@ jQuery( document ).ready( function( $ ) {
 
 
 	</header>
+
+<div id="contenidorWeb">
+
+
 
 	<div id="wrapper">
