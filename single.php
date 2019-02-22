@@ -1,13 +1,7 @@
 <?php get_header(); ?>
 
-<div id="wrapper">
 
 	<section class="entrades">
-
-				<nav class="navigation_single">
-					<span class="alignleft"><?php next_post_link('&laquo; %link') ?></span>
-					<span class="alignright"><?php previous_post_link('%link &raquo;') ?></span>
-				</nav>
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -25,12 +19,9 @@
 
 							<div class="entry">
 									<?php the_content();?>
-
 									<?php wp_link_pages();?>
-
 									<?php edit_post_link('Edita','<p>','</p>');?>
 							</div>
-
 
 				</article>
 
@@ -39,8 +30,7 @@
 						<?php if ( function_exists(similar_posts) ) { ?>
 
 						<div class="related">
-							<h2>Entrades similars</h2>
-							<?php similar_posts(); ?>
+											<?php similar_posts(); ?>
 						</div>
 
 						<?php } ?>

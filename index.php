@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-
-<div id="wrapper">
-
 	<section class="entrades">
 
 		 <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
