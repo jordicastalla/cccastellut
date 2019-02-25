@@ -14,7 +14,7 @@
 	<meta property="og:image" content="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/logo.jpg" />
 	<base href="http://www.centreculturalcastellut.cat/" />
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/themes/cccastellut/js/btnAmunt.js" type="text/css" media="screen" />
 
 
@@ -44,6 +44,10 @@ jQuery( document ).ready( function( $ ) {
 <body>
 
 	<header>
+		<span class="dataCatala"> <?php
+setlocale(LC_ALL,"ca_ES");
+echo strftime("%A %d de %B del %Y");
+?> </span>
 
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
 
@@ -53,22 +57,15 @@ jQuery( document ).ready( function( $ ) {
 
 	<nav id="menuPrincipal">
 
-					<ul>
-						<li class="<?php if (is_home()) { ?>current_page_item<?php } else { ?>page_item<?php } ?>"><a href="<?php bloginfo('url'); ?>" title="Home">Inici</a></li>
+		<?php
 
-						<?php
-			$args = array(
-				'depth'        => 0,
-				'title_li'     => (''),
-				'exclude' => '132,139,152'
-
-			);
-			wp_list_pages( $args );
-			?>
+		wp_nav_menu( array(
+		    'menu' => 'menuPrincipal'
+		) );
 
 
+		 ?>
 
-					</ul>
 	</nav>
 
 

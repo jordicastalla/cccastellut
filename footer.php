@@ -4,9 +4,7 @@
 
 	<footer>
 
-		<!-- <svg id="Serres">
-			<use xlink:href="#Maigmo" />
-		</svg> -->
+	
 		<img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/Maigmo.png" alt="Maigmó" id="Serres" />
 
 

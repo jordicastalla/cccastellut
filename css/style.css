@@ -942,17 +942,13 @@ ol.commentlist li.author {
 /*Pàgines amb arxiu activitats del Centre Cultural Castellut*/
 #Arxiu {
   width: 25%;
-  float: right; }
+  margin-right: 4%; }
 
 .historicCat {
   font-style: italic; }
 
-#Estatic {
-  width: 70%;
-  float: left; }
-
 #Estatic h2, #Contingut h2 {
-  font-size: 45px; }
+  font-size: 3em; }
 
 #Estatic h3 a {
   font-size: 40px; }
@@ -1143,7 +1139,7 @@ aside img {
   box-shadow: none !important; }
 
 #search {
-  background: url(images/search_bg.png) no-repeat left top;
+  background: url(../images/search_bg.png) no-repeat left top;
   padding: 5px 5px 7px; }
 
 #search .text {

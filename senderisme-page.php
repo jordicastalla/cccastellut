@@ -14,111 +14,90 @@
 
 get_header(); ?>
 
+<section id="Arxiu">
 
-	    
-	
-	    <div id="Arxiu">
-    
-				 
-				 <h2>l'Històric del Centre</h2>
-				 <span class='historicCat'>sobre <?php the_title(); ?> </span>
-				
-				<ul>
-					<?php smart_archives( '', 'category_name='.get_the_title() ); ?>
-				</ul>
-				
-				
-     
-	     </div>
-	
-	
-	
-	    <div id="Estatic">
-	   
-	
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			
-	 	    
-		    <h2><?php the_title(); ?></h2>
-			    <?php the_content(); ?>
-		    <?php endwhile; else: endif; ?>
-		    
-	    </div>
-	    
-	   
-	    
-	 <div id="Actualitat">
-		    
+
+					 <h2>l'Històric del Centre</h2>
+					 <span class='historicCat'>sobre <?php the_title(); ?> </span>
+
+					<ul>
+						<?php smart_archives( '', 'category_name='.get_the_title() ); ?>
+					</ul>
+
+
+</section>
+
+
+	 <section id="Actualitat">
+
+
+		 		<div id="Estatic">
+
+
+						 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+						 		<h2><?php the_title(); ?></h2>
+						 			<?php the_content(); ?>
+						 		<?php endwhile; else: endif; ?>
+
+	 			</div>
+
+
 		    <h2>Actualitat</h2>
-		    
-		    
+
+
 		    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		     $args = array (	'posts_per_page' => '8'
 		     ); ?>
-		    
+
 		   <?php query_posts( array( 'category_name' => get_the_title(), 'paged' => get_query_var('paged') ) ); ?>
-		
-		  		    
+
+
 		    <?php $count = 1; if ( have_posts() ) : while ( have_posts() ) : the_post(); if($count == 1); ?>
-		   
+
 		   <!--Per a que isca el "Continuar llegint"-->
-		   <?php global $more; $more = 0; ?> 
-		   
-		    
-		    <div id="Entrada">
-		    
+		   <?php global $more; $more = 0; ?>
+
+
+		    <article id="entrades">
+
 					  <span class='data'><?php the_time('j F Y') ?></span>
-					  
+
 					  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					  
-					  <?php the_content('Continuar llegint') ?>
-					  <div id="mapaSenderisme">
-				<?php
-			       
-			       if(function_exists('pronamic_google_maps')) {
-				   pronamic_google_maps(array(
-				       'width' => 500 ,
-				       'height' => 300 
-				   ));
-			       }
-			       
-			       ?>
 
-			</div>
-					  
+							<?php the_post_thumbnail('medium');?>
+
+							<?php the_excerpt();?>
+
 					   <?php wp_link_pages();?>
-					   
+
 					   <?php edit_post_link('Editar','<p>','</p>');?>
-		   
-		    
-		    </div>
-		    
-		     <div class="comentarii">
-		     
-				<?php comments_popup_link('No hi ha comentaris', 'Un coment', '% comentaris', 'comments-link', 'Aquesta pàgina no accepta comentaris'); ?>
-		     </div>
-			
-		     
+
+
+		    </article>
+
+		     <div class="comentari">
+
+							<?php comments_popup_link('No hi ha comentaris', 'Un coment', '% comentaris', 'comments-link', 'Aquesta pàgina no accepta comentaris'); ?>
+
+				 </div>
+
+
 		      <?php endwhile; ?>
-			 
-			 
-		     
+
+
+
 		     <div class="navigation">
-			
-			<?php if (function_exists('wp_pagenavi')) wp_pagenavi(); else { ?><?php } ?>
-		
+
+					 		<?php if (function_exists('wp_pagenavi')) wp_pagenavi(); else { ?><?php } ?>
+
 		     </div>
 
-	
+
 		<?php endif; ?>
 	   <?php wp_reset_query(); ?>
-    
-	</div>
-	
-	
-    
 
+	</section>
 
 <?php get_footer(); ?>
-
-
