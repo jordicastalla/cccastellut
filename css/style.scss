@@ -12,39 +12,23 @@ Tags: blanc, 3 columnes, nivo-slider, menu , html 5 fonts...
 
 
 @import "sass/variables-site/variables-site";
-@import "sass/mixins/mixins-master";
+
 
 /* Normalize */
 
 @import "sass/normalize";
 
-/* Typography */
-
-@import "sass/typography/typography";
-
 /* Elements */
 
 @import "sass/elements/elements";
-
-/* Forms */
-
-@import "sass/forms/forms";
 
 /* Navigation */
 
 @import "sass/navigation/navigation";
 
-/* Accessibility */
-
-@import "sass/modules/accessibility";
-
 /* Alignments */
 
 @import "sass/modules/alignments";
-
-/* Clearings */
-
-@import "sass/modules/clearings";
 
 /* Layout */
 
@@ -58,9 +42,6 @@ Tags: blanc, 3 columnes, nivo-slider, menu , html 5 fonts...
 
 @import "sass/site/secondary/barraLateral";
 
-/* Blocks */
-
-@import "sass/blocks/blocks";
 
 /* Media */
 
