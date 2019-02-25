@@ -14,7 +14,6 @@
 	<meta property="og:image" content="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/logo.jpg" />
 	<base href="http://www.centreculturalcastellut.cat/" />
 
-	<link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/themes/cccastellut/css/normalize.css">
 	<link rel="stylesheet" href="<?php bloginfo('url');?>/wp-content/themes/cccastellut/css/style.css" type="text/css" media="screen" />
 
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
@@ -72,5 +71,7 @@ jQuery( document ).ready( function( $ ) {
 	</header>
 
 <div id="contenidorWeb">
+
+	 <button onclick="topFunction()" id="xº" title="Ves amunt">Amunt</button>
 
 	<div id="wrapper">

@@ -1,0 +1,67 @@
+/*
+Theme Name: Centre Cultural Castellut Responsive
+Theme URI: http://www.lliuresystems.com
+Description: Tema RESPONSIVE per al Centre Cultural Castellut basat en Whiteplus de militaru.net
+Author: jordijuan.com
+Author URI:  http://www.jordijuan.com
+Version: 2.0
+Tags: blanc, 3 columnes, nivo-slider, menu , html 5 fonts...
+
+
+*/
+
+
+@import "sass/variables-site/variables-site";
+@import "sass/mixins/mixins-master";
+
+/* Normalize */
+
+@import "sass/normalize";
+
+/* Typography */
+
+@import "sass/typography/typography";
+
+/* Elements */
+
+@import "sass/elements/elements";
+
+/* Forms */
+
+@import "sass/forms/forms";
+
+/* Navigation */
+
+@import "sass/navigation/navigation";
+
+/* Accessibility */
+
+@import "sass/modules/accessibility";
+
+/* Alignments */
+
+@import "sass/modules/alignments";
+
+/* Clearings */
+
+@import "sass/modules/clearings";
+
+/* Layout */
+
+@import "sass/layout/layout";
+
+/* Content */
+
+@import "sass/site/site";
+
+/* Widgets */
+
+@import "sass/site/secondary/barraLateral";
+
+/* Blocks */
+
+@import "sass/blocks/blocks";
+
+/* Media */
+
+@import "sass/media/media";

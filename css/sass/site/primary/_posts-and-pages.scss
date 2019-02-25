@@ -1,0 +1,188 @@
+/*Estructura de les Entrades*/
+
+#wrapper{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	text-align: left;
+	justify-content: flex-start;
+	padding: 25px 0px;
+
+}
+
+
+section.entrades{
+
+float:left;
+max-width:60%;
+
+
+}
+
+section.entrades img{
+	float:left;
+	padding: 10px 18px 0px 0px;
+	width:100%;
+	max-width: 268px;
+	height:auto;
+}
+
+.linksEntry{
+	display:block;
+	float:left;
+}
+.linksEntry a{
+	padding-right: 8px;
+}
+
+
+article {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 10px;
+}
+
+
+
+article a, #smart-archives-list h2 a, #smart-archives-block a {
+	font-weight: bold;
+	color: #99042E;
+	text-decoration:none;
+}
+
+article a:hover, #smart-archives-list h2 a:hover, #smart-archives-block a:hover{
+	color:#E51D55;
+	text-decoration: none;
+}
+
+article h2 {
+	width: 100%;
+	padding-bottom: 5px;
+	border-bottom: 1px #2a423c dotted;
+
+}
+
+article h2 a , #Entrada h2 a{
+	padding: 0;
+	margin: 0;
+	color: #99042E;
+	text-decoration: none;
+	font-size: 2em;
+	font-style: italic;
+}
+
+
+
+article h2 a:hover{
+	padding: 0;
+	margin: 0;
+	color: #E51D55;
+	background: none;
+}
+
+.meta {
+	color: #99042E;
+	line-height: 22px;
+}
+
+.meta p {
+	margin: 0;
+	padding: 0;
+}
+
+
+.entry {
+	display: inline-block;
+	line-height: 20px;
+
+}
+
+
+.entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+	padding: 10px 0 5px;
+}
+
+.entry h2 {
+	font-size: 24px;
+	border:none;
+}
+.entry h2 a {
+	color: #8f3939;
+}
+
+.entry h3 {
+	font-family:"Free Sans", "DejaVu Sans", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:#000;
+	text-shadow: 0 0 0;
+}
+
+.entry h4 {
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.entry h5 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.entry h6 {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+article a img {
+	margin: 10px;
+	border: 2px solid #99042E;
+}
+
+article a:hover img{
+
+}
+
+
+.related {
+	margin: 10px;
+	padding: 10px;
+	border-top: 5px solid #99042E;
+}
+
+.related h2 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.related ul li {
+	font-size: 16px;
+	margin: 5px 0 5px 0;
+}
+
+.related ul li a{
+	padding: 2px 4px 2px 4px;
+	text-decoration: none;
+}
+
+.related ul li a:hover{
+	padding: 2px 4px 2px 4px;
+	background: #99042E;
+	color: #ffe9b7;
+}
+
+.comm {
+	margin: 10px 0;
+}
+
+.comm a {
+	padding: 3px 20px 3px 5px;
+	margin: 1px 3px 1px 3px;
+	border-top: 1px #99042E dotted;
+	font-weight: bold;
+}
+
+.comm a:hover{
+	padding: 3px 20px 3px 5px;
+	margin: 1px 3px 1px 3px;
+	border-top: 1px #99042E dotted;
+}

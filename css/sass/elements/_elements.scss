@@ -1,0 +1,144 @@
+.clearer
+{
+clear: both;
+display: block;
+height: 1px;
+margin-bottom: -1px;
+font-size: 1px;
+line-height: 1px;
+}
+
+html{
+
+	margin:0;
+	padding:0;
+	margin-top:0;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, p, form{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size:1em;
+	text-align: center;
+	color: #2a423c;
+	border-top: 10px solid #99042E;
+  font-family: 'Montserrat', sans-serif;
+	text-rendering: optimizeLegibility;
+
+
+
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-family:'Cormorant', serif;
+	font-size:22px;
+	font-weight:bold;
+	color:#99042E;
+
+
+}
+
+
+a{
+	text-decoration: none;
+	color: #99042E;
+}
+
+a:hover{
+	color:#E51D55;
+
+ }
+
+a img { border: 0; }
+
+p { padding: 10px 0 5px; }
+
+blockquote {
+	font: 16px italic Georgia, serif;
+	width:450px;
+	padding-left: 70px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 10px;
+	background-color: #dadada;
+	border-top: 1px solid #ccc;
+	border-bottom: 3px solid #ccc;
+	margin: 5px;
+	background-image: url('http://www.centreculturalcastellut.cat/wp-content/themes/cccastellut/images/blockquote.png');
+	background-position: 15px 15px;
+	background-repeat: no-repeat;
+	text-indent: 23px;
+}
+
+blockquote cite {
+	color: #a1a1a1;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+
+blockquote p { padding: 10px; }
+
+blockquote blockquote {
+	float: none;
+	width: auto;
+	margin: 0 10px;
+}
+
+dd { padding: 0 0 0 20px; }
+
+
+
+p img { max-width: 100%; }
+
+img.aligncenter {
+	padding: 4px;
+	border: 1px solid #ededed;
+}
+
+img.alignright{
+	margin: 3px 0 2px 10px;
+	padding: 4px;
+	border: 1px solid #ededed;
+	display: inline;
+}
+
+img.alignleft {
+	margin: 3px 10px 2px 0;
+	padding: 4px;
+	border: 1px solid #ededed;
+	display: inline;
+}
+
+
+.alignleft { float: left; }
+
+.alignright { float: right }
+
+.aligncenter { 	display: block;	margin-left: auto;	margin-right: auto; }
+
+.clear { margin: 0; padding: 0; clear: both; }
+
+small { font-size: 11px; }
+
+code {
+	background: #ffe9b7;
+}
+
+ul {
+	list-style-type: square;
+}
+
+@import "lists";
+
+
+@import "tables";

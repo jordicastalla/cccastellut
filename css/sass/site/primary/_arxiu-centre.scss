@@ -1,0 +1,87 @@
+/*Pàgines amb arxiu activitats del Centre Cultural Castellut*/
+
+#Arxiu{
+	width:25%;
+	float:right;
+
+}
+
+.historicCat{
+
+	font-style:italic;
+
+}
+
+
+
+#Estatic{
+	width:70%;
+	float:left;
+
+
+}
+
+#Estatic h2, #Contingut h2{
+
+	font-size:45px;
+
+}
+
+#Estatic h3 a{
+
+	font-size:40px;
+
+
+}
+
+#Contingut a{
+text-decoration:none !important;
+color: #99042E;
+font-weight:bold;
+}
+
+#Contingut a:hover{
+color:#E51D55;
+}
+
+#Contingut img{
+
+	border:0;
+}
+
+#Actualitat{
+
+	width:70%;
+	float:left;
+	padding:30px 0 30px 0;
+
+}
+
+#Entrada{
+
+	margin-top:25px;
+	border-top:1px dashed #CCC;
+}
+
+#Entrada .data{
+	display:block;
+	padding-top:10px;
+	font-weight:bold;
+}
+
+#Entrada h2 a{
+
+	text-decoration:none;
+	font-size:30px;
+
+}
+
+
+a.more-link{
+
+	display:block;
+	padding:5px;
+	clear:both;
+
+
+}

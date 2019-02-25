@@ -1,0 +1,82 @@
+/* Peu Centre Cultural Castellut */
+
+#footer{
+	display: block;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	clear:left;
+	margin-top: 10px;
+
+	}
+
+
+#Serres{
+
+	display:block;
+	position: relative;
+	top:0em;
+	z-index:9999;
+	width:100%;
+
+}
+
+footer p{
+	margin: 0 10px 0 10px;
+}
+
+
+footer a{
+	font-weight:bold;
+	color:#FFF;
+}
+
+footer a:hover, aside a:hover{
+	color: #E51D55;
+}
+
+footer .credits a{
+color:#99042E;
+text-decoration:none;
+
+
+}
+
+
+footer .adreca{
+	display:block;
+	width:100%;
+	clear:both;
+
+}
+
+footer .creative{
+padding:14px 0;
+	font-size:0.7em;
+
+}
+
+footer .credits{
+	display: block;
+margin-bottom:5px;
+
+}
+
+
+.footPeu{
+
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background: #99042E;
+	color:#FFF;
+	border-bottom-left-radius:7px;
+	border-bottom-right-radius:7px;
+}
+
+.footPeu a, aside a {
+
+	text-decoration: none;
+}

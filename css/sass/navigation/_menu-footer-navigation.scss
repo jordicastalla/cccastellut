@@ -1,0 +1,21 @@
+
+#menuFooter li, #xarxesFooter li{
+	display:block;
+	list-style-type:none;
+	float:left;
+	text-align: left;
+}
+
+#menuFooter li{
+	padding:0 18px;
+	border-right: solid #FFF 1px;
+}
+
+#menuFooter li:last-child{
+
+	border-right:none;
+}
+
+#xarxesFooter li{
+	width:40px
+}

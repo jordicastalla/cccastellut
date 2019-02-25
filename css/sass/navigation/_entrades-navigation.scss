@@ -1,0 +1,60 @@
+/* Navegació entre Entrades */
+
+
+.navigation {
+	margin: 10px;
+	border-top: 5px solid $ColorCentre;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	font-size: 14px;
+	font-family: $SecundariaCentre;
+	text-align: center;
+}
+
+
+.navigation a{
+	padding: 3px 5px 3px 5px;
+	margin: 1px 3px 1px 3px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2a423c;
+	font-weight: bold;
+}
+
+.navigation a:hover{
+	background: $ColorCentre;
+	color: #ffe9b7;
+}
+
+.navigation_single {
+	max-width:90%;
+	height:50px;
+	flex-grow: 1;
+	padding: 10px 0;
+	font-size: 11px;
+	font-family: $SecundariaCentre;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+.navigation_single .alignright{
+margin-top:15px;
+
+}
+
+
+.navigation_single a{
+	padding: 3px 5px 3px 5px;
+	margin: 1px 3px 1px 3px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #2a423c;
+	font-weight: bold;
+}
+
+.navigation_single a:hover{
+	padding: 3px 5px 3px 5px;
+	margin: 1px 3px 1px 3px;
+	color:$ColorHoverCentre;
+	text-shadow:1px 1px #CCC;
+}
