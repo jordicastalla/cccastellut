@@ -548,7 +548,7 @@ nav#menuPrincipal .current-menu-item > a,
 nav#menuPrincipal .current-menu-ancestor > a,
 nav#menuPrincipal .current_page_item > a,
 nav#menuPrincipal .current_page_ancestor > a {
-  color: #E51D55; }
+  color: #A69C15; }
 
 /* Navegació entre Entrades */
 .navigation {
@@ -613,7 +613,11 @@ nav#menuPrincipal .current_page_ancestor > a {
   border-right: none; }
 
 #xarxesFooter li {
+  filter: sepia(50%);
   width: 40px; }
+
+#xarxesFooter li:hover {
+  filter: sepia(0%); }
 
 /* Alignments */
 /* Layout */
@@ -892,7 +896,7 @@ p.commentmetadata {
   border-radius: 3px; }
 
 #submit:hover, .wp-pagenavi a:hover {
-  color: #E51D55; }
+  color: #A69C15; }
 
 img.avatar {
   float: left;
@@ -1057,7 +1061,7 @@ footer a {
   color: #FFF; }
 
 footer a:hover, aside a:hover {
-  color: #E51D55; }
+  color: #A69C15; }
 
 footer .credits a {
   color: #99042E;
@@ -1186,7 +1190,7 @@ aside img {
 
 .tagcloud a:hover {
   margin: 3px;
-  color: #E51D55;
+  color: #A69C15;
   text-decoration: none; }
 
 /* Llista Activitats*/

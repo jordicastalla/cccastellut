@@ -17,5 +17,12 @@
 }
 
 #xarxesFooter li{
+	filter:sepia(50%);
 	width:40px
+}
+
+#xarxesFooter li:hover{
+
+filter:sepia(0%);
+
 }

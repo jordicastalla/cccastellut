@@ -92,13 +92,13 @@ p.commentmetadata {
 }
 
 #submit, .wp-pagenavi a {
-	background:#99042E;
+	background:$ColorCentre;
 	color:#FFF;
 	border-radius: 3px;
 }
 
 #submit:hover, .wp-pagenavi a:hover{
-	color:#E51D55;
+	color: $ColorSecundariCentre;
 
 
 }
