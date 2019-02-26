@@ -17,19 +17,10 @@
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-
-<!--Fonts Google -->
-<link href="https://fonts.googleapis.com/css?family=Cormorant:400,700i|Montserrat:400,400i,700" rel="stylesheet">
-
-<script type="text/javascript">
-jQuery( document ).ready( function( $ ) {
-    // Relocate Jetpack sharing buttons down into the comments form
-    jQuery( '#Comparteix' ).html( jQuery( '.sharedaddy' ).detach() );
-} );
-</script>
-
+	<!--Fonts Google -->
+	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,700i|Montserrat:400,400i,700" rel="stylesheet">
 </head>
+
 <body>
 
 	<header>
@@ -44,7 +35,7 @@ jQuery( document ).ready( function( $ ) {
 		    <div><img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/slider/Albada-de-Valor.jpg"  /></div>
 		    <div><img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/slider/Fira-Fantasia.jpg"  /></div>
 		    <div><img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/slider/Senderisme.jpg"  /></div>
-  	</div>
+  		</div>
 
 				<nav id="menuPrincipal">
 
