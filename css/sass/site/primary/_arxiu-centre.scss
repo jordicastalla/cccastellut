@@ -2,23 +2,21 @@
 
 #Arxiu{
 	width:25%;
-margin-right: 4%;
+	margin-right: 4%;
+}
+
+#Actualitat{
+
+	width:70%;
+	float:left;
+	padding:30px 0 30px 0;
 
 }
 
 .historicCat{
-
 	font-style:italic;
-
 }
 
-
-
-#Estatic{
-
-
-
-}
 
 #Estatic h2, #Contingut h2{
 
@@ -48,13 +46,7 @@ color:#E51D55;
 	border:0;
 }
 
-#Actualitat{
 
-	width:70%;
-	float:left;
-	padding:30px 0 30px 0;
-
-}
 
 #Entrada{
 
@@ -74,7 +66,6 @@ color:#E51D55;
 	font-size:30px;
 
 }
-
 
 a.more-link{
 

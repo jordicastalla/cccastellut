@@ -2,47 +2,51 @@
 /**
  * Template Name: Estàtic, novetats i històric
  *
- *
+ * package WordPress
+ * @subpackage Twenty_Ten
+ * @since Twenty Ten 1.0
  */
 
 get_header(); ?>
 
 
 
-
-	    <section id="Arxiu">
-
-
-				 <h2>l'Històric del Centre</h2>
-				 <span class='historicCat'>sobre <?php the_title(); ?> </span>
-
-				<ul>
-						<?php smart_archives( '', 'category_name='.esc_html( get_the_title() ) ); ?>
-
-				<h2> <?php get_the_title() ?> </h2>
-				</ul>
+<section id="Arxiu">
 
 
+					 <h2>l'Històric del Centre</h2>
+					 <span class='historicCat'>sobre <?php the_title(); ?> </span>
 
-			</section>
+					<ul>
 
+						<?php
+						$TitolPagina=wp_kses_post( get_the_title() );
 
-
-	    <section id="Estatic">
-
-
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-
-		    <h2><?php the_title(); ?></h2>
-			    <?php the_content(); ?>
-		    <?php endwhile; else: endif; ?>
-
-	    </section>
+					 $TitolCat= str_replace(" ", "-", $TitolPagina);
 
 
+						smart_archives( '', 'category_name='.$TitolCat ); ?>
+
+
+
+					</ul>
+
+
+</section>
 
 	 <section id="Actualitat">
+
+		 <article id="Estatic">
+
+
+	 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+			 <h2><?php the_title(); ?></h2>
+				 <?php the_content(); ?>
+			 <?php endwhile; else: endif; ?>
+
+		 </article>
 
 		    <h2>Actualitat</h2>
 
@@ -73,29 +77,30 @@ get_header(); ?>
 					   <?php edit_post_link('Editar','<p>','</p>');?>
 
 
-		    </div>
+		    </article>
 
 		     <div class="comentari">
 
-				<?php comments_popup_link('No hi ha comentaris', 'Un coment', '% comentaris', 'comments-link', 'Aquesta pàgina no accepta comentaris'); ?>
-		     </div>
+					 	<?php comments_popup_link('No hi ha comentaris', 'Un coment', '% comentaris', 'comments-link', 'Aquesta pàgina no accepta comentaris'); ?>
+
+				 </div>
 
 
 		      <?php endwhile; ?>
 
 
 
-		     <div class="navigation">
+		     <nav class="navigation">
 
-			<?php if (function_exists('wp_pagenavi')) wp_pagenavi(); else { ?><?php } ?>
+					 	<?php if (function_exists('wp_pagenavi')) wp_pagenavi(); else { ?><?php } ?>
 
-		     </div>
+				</nav>
 
 
 		<?php endif; ?>
 	   <?php wp_reset_query(); ?>
 
-	</div>
+	</section>
 
 
 
