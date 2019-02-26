@@ -4,7 +4,7 @@
 
 	<footer>
 
-	
+
 		<img src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/images/Maigmo.png" alt="Maigmó" id="Serres" />
 
 
@@ -34,6 +34,21 @@
 
 
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
+<script src="?php bloginfo('url');?>/wp-content/themes/cccastellut/js/btnAmunt.js"></script>
+<script src="?php bloginfo('url');?>/wp-content/themes/cccastellut/js/slick.min.js"></script>
+
+	<script>
+
+	$(document).ready(function(){
+	  $('.slider-ccc').slick({
+
+	  });
+	});
+
+	</script>
 
 </body>
 
