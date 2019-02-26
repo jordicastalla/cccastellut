@@ -7,7 +7,7 @@
 	text-align: left;
 	justify-content: flex-start;
 	padding: 25px 0px;
-	
+
 }
 
 
@@ -135,13 +135,24 @@ article h2 a:hover{
 
 article a img {
 	margin: 10px;
-	border: 2px solid #99042E;
+
 }
 
 article a:hover img{
 
 }
 
+.photonic-header-details{
+	width:100%;
+	clear:left;
+	font-size:1.5em;
+}
+
+.yarpp-related{
+max-width: 60%;
+clear:left;
+
+}
 
 .related {
 	margin: 10px;

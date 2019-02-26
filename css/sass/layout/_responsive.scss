@@ -1,0 +1,50 @@
+@media all and (max-width: $mobile_width), (orientation: portrait){
+
+  #contenidorWeb{
+  	width:100%;
+  	margin:0 auto;
+  }
+
+  #wrapper{
+  		flex-direction:column ;
+
+  	}
+
+    section.entrades{
+
+      float: none;
+      max-width: 100%;
+      transition: width 0.8s ease-out;
+
+    }
+
+    aside {
+    float:none;
+    max-width: 100%;
+    transition: width 1.8s ease-out;
+    font-size: 1.2em;
+
+    }
+    aside ul{
+    text-align: center;
+
+
+    }
+
+
+
+  	nav {
+
+  		align-self: center;
+
+  	}
+
+  }
+
+
+@media (max-width: $tablet_width), (orientation:portrait) {
+
+
+
+
+}

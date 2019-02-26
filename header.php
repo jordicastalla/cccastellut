@@ -52,6 +52,6 @@
 
 <div id="contenidorWeb">
 
-	 <button onclick="topFunction()" id="btnAmunt" title="Ves amunt">Amunt</button>
+	 <button onclick="topFunction()" id="btnAmunt" title="Ves amunt">Pujar</button>
 
 	<div id="wrapper">

@@ -69,8 +69,8 @@ get_header(); ?>
 					  <span class='data'><?php the_time('j F Y') ?></span>
 
 					  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-					  <?php the_content('Continuar llegint') ?>
+						<?php the_post_thumbnail('medium');?>
+						<?php the_excerpt();?>
 
 					   <?php wp_link_pages();?>
 

@@ -4,11 +4,6 @@
 
 			<?php wp_list_categories('show_count=1&title_li=<h2>Activitats</h2>'); ?>
 
-
-
-
-
-
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar 1") ) : ?>
 
 			<?php wp_list_pages('title_li=<h2>Pàgines</h2>' ); ?>
@@ -37,18 +32,11 @@
 			<li id="search_id">
 				<form method="get" id="searchform" action="<?php bloginfo('home'); ?>">
 					<div id="search">
-						<input type="text" value="" name="s" id="s" class="text" />
+						<input type="text" value=""  placeholder="Cerca" name="s" id="s" class="text" />
 						<input type="image" id="searchsubmit" src="<?php bloginfo('template_url');?>/images/search_s.png" value="Cerca" alt="Cerca" class="button" />
 					</div>
 				</form>
 			</li>
-
-			<li><h2>Calendari</h2>
-				<div id="calendar">
-					<?php get_calendar(); ?>
-				</div>
-			</li>
-
 
 			<?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar 2") ) : ?>
 
