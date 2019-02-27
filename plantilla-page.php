@@ -9,31 +9,6 @@
 
 get_header(); ?>
 
-
-
-<section id="Arxiu">
-
-
-					 <h2>l'Històric del Centre</h2>
-					 <span class='historicCat'>sobre <?php the_title(); ?> </span>
-
-					<ul>
-
-						<?php
-						$TitolPagina=wp_kses_post( get_the_title() );
-
-					 $TitolCat= str_replace(" ", "-", $TitolPagina);
-
-
-						smart_archives( '', 'category_name='.$TitolCat ); ?>
-
-
-
-					</ul>
-
-
-</section>
-
 	 <section id="Actualitat">
 
 		 <article id="Estatic">
@@ -103,6 +78,28 @@ get_header(); ?>
 	</section>
 
 
+	<section id="Arxiu">
+
+
+						 <h2>l'Històric del Centre</h2>
+						 <span class='historicCat'>sobre <?php the_title(); ?> </span>
+
+						<ul>
+
+							<?php
+							$TitolPagina=wp_kses_post( get_the_title() );
+
+						 $TitolCat= str_replace(" ", "-", $TitolPagina);
+
+
+							smart_archives( '', 'category_name='.$TitolCat ); ?>
+
+
+
+						</ul>
+
+
+	</section>
 
 
 

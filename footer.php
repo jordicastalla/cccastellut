@@ -41,6 +41,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/js/btnAmunt.js"></script>
+<script src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/js/tinynav.js"></script>
 <script src="<?php bloginfo('url');?>/wp-content/themes/cccastellut/js/slick.min.js"></script>
 
 	<script>
@@ -60,6 +61,13 @@
 	    jQuery( '#Comparteix' ).html( jQuery( '.sharedaddy' ).detach() );
 	} );
 
+	$(function () {
+    $("#menuPrincipal").tinyNav({   
+  header: 'Navega', // String: Specify text for "header" and show header instead of the active item
+  indent: '- ', // String: Specify text for indenting sub-items
+  label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+});
+  });
 
 	</script>
 

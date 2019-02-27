@@ -3,12 +3,87 @@
   #contenidorWeb{
   	width:100%;
   	margin:0 auto;
+    transition: width 1.8s ease-out;
   }
 
   #wrapper{
   		flex-direction:column ;
 
   	}
+
+    section.entrades, section#Actualitat{
+
+      float: none;
+      max-width: 100%;
+      transition: width 0.8s ease-out;
+
+    }
+
+    aside, section#Arxiu {
+    float:none;
+    max-width: 100%;
+    transition: width 1.8s ease-out;
+    font-size: 1.2em;
+
+    }
+    aside ul, section#Arxiu ul{
+    text-align: center;
+
+
+    }
+
+    #logo{
+
+    	max-width:70px;
+
+
+    }
+
+    header h1 {
+    display:none;
+
+
+    }
+
+    .slider-ccc img{
+  transition: width 1.8s ease-out;
+  max-height: 10em;
+
+    }
+
+    article#Entrada img{
+    text-align: center;
+    margin:0 auto;
+    padding: 10px;
+    max-width:$mobile_width;
+
+
+    }
+
+
+
+
+  	nav {
+
+  		align-self: center;
+
+  	}
+
+  }
+
+
+@media (max-width: $tablet_width), (orientation:portrait) {
+
+  #contenidorWeb{
+    width:100%;
+    margin:0 auto;
+    transition: width 1.8s ease-out;
+  }
+
+  #wrapper{
+      flex-direction:column ;
+
+    }
 
     section.entrades{
 
@@ -31,18 +106,94 @@
 
     }
 
+    #logo{
+
+      max-width:100px;
 
 
-  	nav {
+    }
 
-  		align-self: center;
+    header h1 {
+    display:none;
 
-  	}
+    }
+
+    .slider-ccc img{
+  transition: width 1.8s ease-out;
+  max-height: 20em;
+
+    }
+
+    nav#menuPrincipal a{
+
+      font-size: 0.8em;
+    }
+    nav#menuPrincipal ul{
+      width:100%;
+    }
+
+    nav#menuPrincipal ul > li {
+      width: 100%;
+    }
+    nav#menuPrincipal ul ul, nav#menuPrincipal ul ul li, nav#menuPrincipal ul ul a{
+      display:none;
+    }
+
+    .tinynav { display: block }
+    #menuPrincipal { display: none }
+
+
+    section#Actualitat,section#Arxiu, .comentari{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+  section#Arxiu ul, #Contingut{
+  margin:0 auto;
+  padding:12px;
+
+
+  }
+
+    article#Entrada img{
+    margin:0 auto;
+    padding: 10px;
+    max-width:400px;
+
+
+    }
+
+
+
+
+
+
+}
+
+@media (max-width: $desktop_width) {
+  #contenidorWeb{
+    width:95%;
+    margin:0 auto;
+    transition: width 1.8s ease-out;
+  }
+
+  #logo{
+
+    max-width:140px;
+
 
   }
 
 
-@media (max-width: $tablet_width), (orientation:portrait) {
+}
+
+@media (max-width: $wide_width) {
+  #contenidorWeb{
+    width:90%;
+    margin:0 auto;
+    transition: width 1.8s ease-out;
+  }
 
 
 

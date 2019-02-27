@@ -26,14 +26,18 @@ header{
 	top:50px;
 	max-width:170px;
 	z-index:9999;
+	filter: drop-shadow(5px 5px 5px #222);
 
 }
 
 header h1 {
 	position:absolute;
-	left:15%;
-	top:80px;
+	margin-left: 10px;
+	left:18%;
+	top:100px;
 	z-index:9999;
+	filter: drop-shadow(5px 5px 5px #222);
+
 
 }
 
@@ -43,7 +47,7 @@ header h1 a{
 	text-decoration: none;
 	padding: 0;
 	font-family: $PrincipalCentre;
-	font-size:3em;
+	font-size:2.5em;
 }
 
 .slider-ccc {
