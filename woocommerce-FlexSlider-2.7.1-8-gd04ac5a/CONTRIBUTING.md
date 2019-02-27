@@ -1,1 +1,0 @@
-  * Clearly describe the issue including steps to reproduce when it is a bug.
