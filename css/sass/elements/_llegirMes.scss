@@ -1,0 +1,23 @@
+.linksEntry{
+  display:block;
+  float:left;
+    background-color: $ColorCentre;
+    margin:1em 0 0 0;
+    font-family: $SecundariaCentre;
+    font-size:0.8em;
+    line-height: 1.3em;
+    padding:0.5em;
+  	border-radius: 0.5em;
+}
+
+
+.linksEntry a{
+
+
+      color:#FFF;
+}
+
+.linksEntry a:hover{
+
+      color:$ColorSecundariCentre;
+}

@@ -1,0 +1,55 @@
+.jumbotron{
+
+  margin:165px auto;
+  width: 100%;
+
+    .container{
+
+      padding:8% 3% 5% 3%;
+
+          h1{
+
+            font-family: nth($Tipografies, 1); 
+            color:$colorMenu;
+            text-align: left;
+            line-height: 110%;
+
+          }
+
+          p{
+
+            font-size:1.3em;
+
+
+          }
+
+
+          a{
+          color:$colorSubtitulos;
+          text-decoration: none;
+
+          }
+
+          a:hover{
+          color:$colorTitulos;
+
+          }
+
+
+    }
+
+
+
+}
+
+.jumbo{
+
+@include imagenFondo ('img/80S.png', 100px);
+
+
+}
+.action{
+
+@include imagenFondo ('img/80S2.jpg', 800px);
+
+}

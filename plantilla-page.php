@@ -23,9 +23,6 @@ get_header(); ?>
 
 		 </article>
 
-		    <h2>Actualitat</h2>
-
-
 		    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		     $args = array (	'posts_per_page' => '8'
 		     ); ?>
@@ -44,11 +41,10 @@ get_header(); ?>
 					  <span class='data'><?php the_time('j F Y') ?></span>
 
 					  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
 						<?php the_post_thumbnail('medium');?>
 						<?php the_excerpt();?>
-
 					   <?php wp_link_pages();?>
-
 					   <?php edit_post_link('Editar','<p>','</p>');?>
 
 

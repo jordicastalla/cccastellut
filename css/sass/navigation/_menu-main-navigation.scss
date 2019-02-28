@@ -3,7 +3,7 @@
 nav#menuPrincipal {
 	width:100%;
 	background: linear-gradient($ColorCentre, #0a0a0a);
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+
 }
 
 nav#menuPrincipal ul {
@@ -13,6 +13,13 @@ nav#menuPrincipal ul {
 	padding:0;
 
 }
+
+nav#menuPrincipal ul.menu{
+margin-bottom:-2px;
+
+}
+
+
 nav#menuPrincipal li {
 	float: left;
 	position: relative;
@@ -24,7 +31,7 @@ nav#menuPrincipal a {
 	color:#FFF;
 	display: block;
 	line-height: 3.333em;
-	padding: 0 1.2125em;
+	padding: 0 1em;
 	text-decoration: none;
 }
 nav#menuPrincipal ul ul {
@@ -46,7 +53,7 @@ nav#menuPrincipal ul ul ul {
 }
 nav#menuPrincipal ul ul a {
 	background: #191919;
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px dotted $ColorHoverCentre;
 	color:#fff;
 	font-size: 13px;
 	font-weight: normal;

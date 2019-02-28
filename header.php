@@ -25,7 +25,10 @@
 
 	<header>
 
-			<span class="dataCatala"> <?php setlocale(LC_ALL,"ca_ES"); echo strftime("%A, %d de %B de %Y"); ?> </span>
+
+
+				<span class="dataCatala"> <?php setlocale(LC_ALL,"ca_ES"); echo strftime("%A, %d de %B de %Y"); ?> </span>
+
 
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
 
@@ -38,17 +41,12 @@
   		</div>
 
 				<nav id="menuPrincipal">
-
 						<?php
 						wp_nav_menu( array(
 						    'menu' => 'menuPrincipal'
 						) );
 						 ?>
-
 				</nav>
-
-
-
 
 	</header>
 

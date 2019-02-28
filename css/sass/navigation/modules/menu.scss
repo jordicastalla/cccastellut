@@ -1,0 +1,66 @@
+nav{
+
+  ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+
+  }
+
+
+
+  a{
+  display:block;
+  padding:15px;
+  text-decoration:none;
+  font-size:1.5em;
+  font-family:$Titulos;
+  text-transform: capitalize;
+
+  }
+
+
+}
+
+
+// Botones
+
+
+%btn{
+  display: inline-block;
+  padding: 7px 11px;
+  text-align: center;
+  cursor: crosshair;
+  border-radius:5px;
+  color: $colorSubtitulos;
+  text-decoration: none;
+  background: $colorPrincipal;
+
+  &:hoover{
+  background: lighten($colorPrincipal, 30%); ;
+
+  }
+
+
+}
+$red: red;
+$green: green;
+$blue: blue;
+
+$botoNoms: 'a', 'b', 'c' ;
+$colors: $red, $green,$blue;
+
+@each $nombre in $botoNoms{
+
+  $i: index($botoNoms, $nombre);
+
+  .btn-#{$nombre}{
+
+  @extend %btn;
+  background-color: nth($colors, $i);
+
+  }
+
+
+
+}

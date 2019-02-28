@@ -6,17 +6,13 @@
 
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Sidebar 1") ) : ?>
 
-			<?php wp_list_pages('title_li=<h2>Pàgines</h2>' ); ?>
-
-			<?php wp_list_bookmarks(); ?>
+			<?php endif; ?>
 
 			<li><h2>Arxius</h2>
 				<ul>
-					<?php wp_get_archives('type=monthly'); ?>
+					<?php wp_get_archives('type=yearly'); ?>
 				</ul>
 			</li>
-
-			<?php endif; ?>
 
 			<li class="rss">
 				<a href="<?php bloginfo('rss_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/rss_feed.png" alt="RSS FEED" title="Subscriute utilitzant RSS" /></a>
@@ -33,7 +29,6 @@
 				<form method="get" id="searchform" action="<?php bloginfo('home'); ?>">
 					<div id="search">
 						<input type="text" value=""  placeholder="Cerca" name="s" id="s" class="text" />
-						<input type="image" id="searchsubmit" src="<?php bloginfo('template_url');?>/images/search_s.png" value="Cerca" alt="Cerca" class="button" />
 					</div>
 				</form>
 			</li>

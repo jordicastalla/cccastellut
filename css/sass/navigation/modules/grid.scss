@@ -1,0 +1,19 @@
+$container-width: 100%;
+$columns-number:4;
+$margin:1%;
+
+.contenidor{
+width:$container-width;
+height:800px;
+
+}
+
+
+.column{
+background-color: $colorMenu;
+height: 175px;
+display: block;
+width: ($container-width / $columns-number) - ($margin * 2);
+margin:0px $margin;
+float:left;
+}

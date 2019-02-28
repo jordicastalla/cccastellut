@@ -19,21 +19,23 @@ max-width:60%;
 
 }
 
-section.entrades img{
+.entry img, #Entrada img{
+max-width:100%;
+height: auto;
+object-fit: cover;
+}
+
+.photonic-google-stream img{
 	float:left;
 	padding: 10px 18px 0px 0px;
 	width:100%;
-	max-width: 268px;
-	height:auto;
+	max-width: 300px;
+	height:200px;
+
 }
 
-.linksEntry{
-	display:block;
-	float:left;
-}
-.linksEntry a{
-	padding-right: 8px;
-}
+
+
 
 
 article {
@@ -58,13 +60,12 @@ article a:hover, #smart-archives-list h2 a:hover, #smart-archives-block a:hover{
 article h2 {
 	width: 100%;
 	padding-bottom: 5px;
-	border-bottom: 1px #2a423c dotted;
 
 }
 
 article h2 a , #Entrada h2 a{
 	padding: 0;
-	margin: 0;
+	margin-bottom:0;
 	color: #99042E;
 	text-decoration: none;
 	font-size: 2em;
@@ -83,6 +84,7 @@ article h2 a:hover{
 .meta {
 	color: #99042E;
 	line-height: 22px;
+	margin-bottom:20px;
 }
 
 .meta p {
@@ -149,6 +151,7 @@ article a:hover img{
 }
 
 .yarpp-related{
+padding-top: 25px;
 max-width: 60%;
 clear:left;
 
