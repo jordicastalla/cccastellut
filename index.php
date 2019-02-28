@@ -21,7 +21,7 @@
 					</h2>
 
 					<div class="meta">
-						<p><?php the_time('l, j F Y'); ?>, | Categoria : <?php the_category(', '); ?> <br />
+						<p><i class="far fa-calendar-alt"></i><?php the_time('l, j F Y'); ?>, | <i class="fas fa-pencil-alt"></i> Categoria : <?php the_category(', '); ?> <br />
 				</p>
 					</div>
 
@@ -30,7 +30,7 @@
 						<?php the_excerpt();?>
 						<?php wp_link_pages();?>
 						<div class="linksEntry">
-				 		<a href="<?php the_permalink();?>" title="<?php the_title();?>">Llegir més </a>
+				 		<a href="<?php the_permalink();?>" title="<?php the_title();?>"><i class="fas fa-plus"></i> Llegir més </a>
 						<?php edit_post_link('Editar');?>
 					</div>
 

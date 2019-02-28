@@ -8,14 +8,14 @@
 
 			<?php endif; ?>
 
-			<li><h2>Arxius</h2>
+			<li class='arxiusLateral'><h2><i class="fas fa-file-archive"></i> Arxius</h2>
 				<ul>
 					<?php wp_get_archives('type=yearly'); ?>
 				</ul>
 			</li>
 
 			<li class="rss">
-				<a href="<?php bloginfo('rss_url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/rss_feed.png" alt="RSS FEED" title="Subscriute utilitzant RSS" /></a>
+				<a href="<?php bloginfo('rss_url'); ?>"><i class="fas fa-rss"></i> RSS</a>
 			</li>
 
 		</ul>

@@ -19,7 +19,8 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!--Fonts Google -->
 	<link href="https://fonts.googleapis.com/css?family=Cormorant:400,700i|Montserrat:400,400i,700" rel="stylesheet">
-</head>
+	<!--Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"></head>
 
 <body>
 
@@ -27,7 +28,7 @@
 
 
 
-				<span class="dataCatala"> <?php setlocale(LC_ALL,"ca_ES"); echo strftime("%A, %d de %B de %Y"); ?> </span>
+				<span class="dataCatala"><i class="far fa-clock"></i> <?php setlocale(LC_ALL,"ca_ES"); echo strftime("%A, %d de %B de %Y"); ?> </span>
 
 
 			<h1><a href="<?php bloginfo('url');?>"><?php bloginfo('name');?></a></h1>
@@ -52,6 +53,6 @@
 
 <div id="contenidorWeb">
 
-	 <button onclick="topFunction()" id="btnAmunt" title="Ves amunt">Pujar</button>
+	 <button onclick="topFunction()" id="btnAmunt" title="Ves amunt "><i class="fas fa-arrow-up"></i></button>
 
 	<div id="wrapper">

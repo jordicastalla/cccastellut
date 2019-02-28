@@ -935,15 +935,15 @@ a.more-link {
 h3.ytc_title {
   padding-top: 5px;
   margin-bottom: 20px;
-  font-family: 'Cormorant', serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-style: normal; }
+  font-style: normal;
+  text-align: center; }
 
 .ytc_link {
-  margin: 10px 0 10px 0;
   font-size: 28px;
   font-weight: bold;
-  font-family: 'Cormorant', serif; }
+  font-family: "Montserrat", sans-serif; }
 
 /*--------------------------------------------------------------
 ## Footer
@@ -1042,6 +1042,14 @@ aside ul ul li {
 aside ul ul ul {
   padding: 0 0 0 10px; }
 
+li.arxiusLateral {
+  text-align: center;
+  font-size: 1.2em; }
+
+li.rss {
+  font-size: 4em;
+  text-align: center; }
+
 li.rss a {
   text-decoration: none;
   padding: 0; }
@@ -1055,7 +1063,8 @@ aside img {
 
 #search {
   border: 1px solid #99042E;
-  padding: 5px 8px 7px; }
+  padding: 5px 8px 7px;
+  width: 75%; }
 
 #searchsubmit {
   max-width: 31px;
@@ -1063,7 +1072,7 @@ aside img {
 
 #search .text {
   border: 0;
-  width: 128px;
+  width: 90px;
   vertical-align: middle;
   font-size: 20px; }
 
@@ -1325,7 +1334,7 @@ body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, p, form {
   padding: 0; }
 
 body {
-  font-size: 1em;
+  font-size: 1.2em;
   text-align: center;
   color: #2a423c;
   font-family: 'Montserrat', sans-serif;
@@ -1430,6 +1439,9 @@ code {
 ul {
   list-style-type: square; }
 
+i.far {
+  margin-right: 5px; }
+
 #btnAmunt {
   display: none;
   position: fixed;
@@ -1441,9 +1453,9 @@ ul {
   background-color: #A69C15;
   color: white;
   cursor: pointer;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: "Montserrat", sans-serif; }
 
 #btnAmunt:hover {
